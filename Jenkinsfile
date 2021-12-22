@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build the demo desclarative pipeline job'
-        sh 'sh run_build_script.sh'
       }
     }
 
@@ -13,7 +12,6 @@ pipeline {
         stage('Linux Test') {
           steps {
             echo 'Running Linux Test'
-            sh 'sh run_linux_tests.sh'
           }
         }
 
